@@ -174,8 +174,9 @@ aipo.timeline.refreshImageList = function(pid, i) {
 			}
 			if(revmax==0&&document.getElementById("tlClipImage_"+pid+"_1")!=null){
 				revmax = 1;
+			} else {
+				revmax++;
 			}
-			revmax++;
 			aipo.timeline.revmaxlist[pid] = revmax;
 
 			var info = dojo.byId("tlClipImage_" + pid + "_1_untiview");
@@ -203,8 +204,9 @@ aipo.timeline.refreshImageList = function(pid, i) {
 		}
 		if(revmax==0&&document.getElementById("tlClipImage_"+pid+"_1")!=null){
 			revmax = 1;
+		} else {
+			revmax++;
 		}
-		revmax++;
 		aipo.timeline.revmaxlist[pid] = revmax;
 
 		var info = dojo.byId("tlClipImage_" + pid + "_1_untiview");
